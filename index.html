@@ -68,13 +68,18 @@
         .rating .star.selected {
             color: #facc15; /* yellow-400 */
         }
-        .pulse {
-            animation: pulse-animation 2s infinite;
+        .emoticon-rating-item {
+            transition: all 0.2s ease-in-out;
         }
-        @keyframes pulse-animation {
-            0% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.7); }
-            70% { box-shadow: 0 0 0 10px rgba(22, 163, 74, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); }
+        .emoticon-rating-item.selected {
+            border-color: #ef4444; /* red-500 */
+            transform: scale(1.1);
+        }
+        .tag-option.selected {
+            background-color: #fecaca; /* red-200 */
+            color: #b91c1c; /* red-800 */
+            border-color: #ef4444; /* red-500 */
+            font-weight: 600;
         }
     </style>
 </head>
